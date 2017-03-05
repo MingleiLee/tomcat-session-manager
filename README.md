@@ -4,14 +4,12 @@ Tomcat session manager for Tomcat 8.x
 Overview
 --------
 
-A tomcat session manager implementation that stores sessions in Redis for easy distribution of requests across a cluster of Tomcat servers. Sessions are implemented as as non-sticky--that is, each request is able to go to any server in the cluster.
-
-We will support using MongoDB or relational database as session store later.
+Stores Tomcat sessions to Redis. MongoDB and relational database will also be supported later.
 
 Usage
 -----
 
-Add the following into your Tomcat context.xml (or the context block of the server.xml if applicable.)
+Add the following to conf/Catalina/localhost/APP_NAME.xml:
 
     <Valve className="com.jeedsoft.tomcat.session.FastStoreSessionValve"/>
     <Manager className="com.jeedsoft.tomcat.session.impl.redis.RedisSessionManager"
