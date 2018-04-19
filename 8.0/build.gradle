@@ -5,8 +5,8 @@ archivesBaseName='jeedsoft-tsm-8.0'
 dependencies {
 	compile 'redis.clients:jedis:2.9.0'
 	compile 'org.apache.commons:commons-pool2:2.5.0'
-	compile 'org.apache.tomcat:tomcat-catalina:8.0.39'
-	compile 'org.apache.tomcat:tomcat-jdbc:8.0.39'
-	compile 'org.apache.tomcat:tomcat-juli:8.0.39'
-	compile 'org.apache.tomcat:tomcat-util:8.0.39'
+	compile 'org.apache.tomcat:tomcat-catalina:8.0.51'
+	compile 'org.apache.tomcat:tomcat-jdbc:8.0.51'
+	compile 'org.apache.tomcat:tomcat-juli:8.0.51'
+	compile 'org.apache.tomcat:tomcat-util:8.0.51'
 }
