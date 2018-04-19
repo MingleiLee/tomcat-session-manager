@@ -1,5 +1,5 @@
 # tomcat-session-manager
-Tomcat session manager for Tomcat 8.x
+Tomcat session manager for Tomcat 8.0.x/8.5.x/9.0.x
 
 Overview
 --------
