@@ -1,26 +1,19 @@
-apply plugin: 'maven'
-apply plugin: 'java'
-
-group = 'com.jeedsoft'
-version = '1.0.0'
-sourceCompatibility = '1.7'
-
-repositories {
-    jcenter()
-}
-
-dependencies {
-	compile 'redis.clients:jedis:2.9.0'
-	compile 'org.apache.commons:commons-pool2:2.4.2'
-	compile 'org.apache.tomcat:tomcat-catalina:8.0.39'
-	compile 'org.apache.tomcat:tomcat-jdbc:8.0.39'
-	compile 'org.apache.tomcat:tomcat-juli:8.0.39'
-	compile 'org.apache.tomcat:tomcat-util:8.0.39'
+subprojects {
+	apply plugin: 'maven'
+	apply plugin: 'java'
 	
-	testCompile 'junit:junit:3.8.1'
-}
+	group = 'com.jeedsoft'
+	
+	repositories {
+	    jcenter()
+	}
+	
+	dependencies {
+		testCompile 'junit:junit:4.12'
+	}
 
-tasks.withType(JavaCompile) {
-    options.incremental = true
-    options.encoding = 'UTF-8'
+	tasks.withType(JavaCompile) {
+	    options.incremental = true
+	    options.encoding = 'UTF-8'
+	}
 }

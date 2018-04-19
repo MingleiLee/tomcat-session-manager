@@ -3,6 +3,14 @@
 /.settings/
 /build/
 /bin/
-/.DS_Store
 /.classpath
 /.project
+
+/*/build/
+/*/bin/
+/*/.classpath
+/*/.project
+/*/.gradle/
+/*/.idea/
+/*/.settings/
+/**/.DS_Store
