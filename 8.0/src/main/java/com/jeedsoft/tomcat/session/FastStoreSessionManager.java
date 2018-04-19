@@ -188,24 +188,28 @@ public class FastStoreSessionManager extends LifecycleMBeanBase implements Manag
 	}
 
 	@Override
+    @Deprecated
 	public boolean getDistributable()
 	{
 		return distributable;
 	}
 
 	@Override
+    @Deprecated
 	public void setDistributable(boolean distributable)
 	{
 		this.distributable = distributable;
 	}
 
 	@Override
+    @Deprecated
 	public int getMaxInactiveInterval()
 	{
 		return maxInactiveInterval;
 	}
 
 	@Override
+    @Deprecated
 	public void setMaxInactiveInterval(int maxInactiveInterval)
 	{
 		int oldValue = this.maxInactiveInterval;

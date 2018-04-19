@@ -75,10 +75,6 @@ public class FastStoreSessionManager extends LifecycleMBeanBase implements Manag
 
     private long backgroundProcessSerial = 0;
 
-    private boolean notifyBindingListenerOnUnchangedValue;
-
-    private boolean notifyAttributeListenerOnUnchangedValue = true;
-
 	private ObjectStringConverter converter;
 
 	public FastStore getStore()
@@ -528,28 +524,4 @@ public class FastStoreSessionManager extends LifecycleMBeanBase implements Manag
 	{
 		return false;
 	}
-
-    @Override
-    public boolean getNotifyBindingListenerOnUnchangedValue()
-    {
-        return notifyBindingListenerOnUnchangedValue;
-    }
-
-    @Override
-    public boolean getNotifyAttributeListenerOnUnchangedValue()
-    {
-        return notifyAttributeListenerOnUnchangedValue;
-    }
-
-    @Override
-    public void setNotifyBindingListenerOnUnchangedValue(boolean notifyBindingListenerOnUnchangedValue)
-    {
-        this.notifyBindingListenerOnUnchangedValue = notifyBindingListenerOnUnchangedValue;
-    }
-
-    @Override
-    public void setNotifyAttributeListenerOnUnchangedValue(boolean notifyAttributeListenerOnUnchangedValue)
-    {
-        this.notifyAttributeListenerOnUnchangedValue = notifyAttributeListenerOnUnchangedValue;
-    }
 }

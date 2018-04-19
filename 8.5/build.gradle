@@ -1,0 +1,12 @@
+version = '1.0.0'
+sourceCompatibility = '1.7'
+archivesBaseName='jeedsoft-tsm-8.5'
+
+dependencies {
+	compile 'redis.clients:jedis:2.9.0'
+	compile 'org.apache.commons:commons-pool2:2.5.0'
+	compile 'org.apache.tomcat:tomcat-catalina:8.5.30'
+	compile 'org.apache.tomcat:tomcat-jdbc:8.5.30'
+	compile 'org.apache.tomcat:tomcat-juli:8.5.30'
+	compile 'org.apache.tomcat:tomcat-util:8.5.30'
+}
